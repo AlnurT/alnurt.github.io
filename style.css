@@ -45,10 +45,11 @@ h1 {
 .list {
 	padding: 0 8px;
 	text-align: left;
+	font-weight: 400;
 	display: grid;
+	row-gap: 0;
 	grid-template-columns: 8% 92%;
-	grid-template-rows: repeat(4, 60px);
-
+	grid-template-rows: min-content;
 }
 
 .btn {
@@ -62,7 +63,7 @@ h1 {
 	font-weight: 700;
 }
 
-#info.btn {
+.btn_change {
 	align-self: end;
 }
 
