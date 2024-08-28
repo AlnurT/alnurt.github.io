@@ -1,8 +1,10 @@
 body {
 	margin: 0;
 	padding: 0;
+	max-width: 390px;
+	border: 1px solid black;
 	font-size: 18px;
-	line-height: 10px;
+	line-height: 18px;
 	color: var(--tg-theme-text-color);
 	background: var(--tg-theme-bg-color);
 }
@@ -17,9 +19,8 @@ a {
 	color: var(--tg-theme-text-color);
 }
 
-.container {
-	border: 1px solid black;
-	max-width: 390px;
+#info {
+	display: block;
 	padding: 8px;
 	text-align: left;
 }
@@ -29,6 +30,19 @@ a {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: repeat(7, 25px);
+}
+
+#rules {
+	display: none;
+}
+
+.list {
+	padding: 0 8px 8px 20px;
+	text-align: left;
+	display: grid;
+	grid-template-columns: 8% 92%;
+	grid-template-rows: repeat(4, 50px);
+
 }
 
 
@@ -50,19 +64,13 @@ a {
 	display: inline-block;
 	padding: 10px 20px;
 	border: none;
-	background: rgb(248, 168, 24);
+	background: var(--tg-theme-button-color);
 	border-radius: 10px;
-	color: #fff;
-	text-transform: uppercase;
+	color: var(--tg-theme-button-text-color);
 	font-weight: 700;
-
-	transition: background .2s linear;
+	/*transition: background .2s linear;*/
 }
 
 .btn:hover {
-	background: lightgreen;
-}
-
-.usercard {
-	text-align: center;
+	background: var(--tg-theme-button-color);
 }
