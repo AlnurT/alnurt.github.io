@@ -3,15 +3,27 @@ let info = document.getElementById("info_btn");
 let rules = document.getElementById("rules_btn");
 let address = document.getElementById("address");
 let tel = document.getElementById("tel");
+let count = document.getElementById("count");
+
 
 info.addEventListener("click", () => {
     document.getElementById("info").style.display = "block";
+    document.getElementById("info_btn").style.display = "none";
     document.getElementById("rules").style.display = "none";
+    document.getElementById("rules_btn").style.display = "block";
 });
 
 rules.addEventListener("click", () => {
     document.getElementById("info").style.display = "none";
+    document.getElementById("info_btn").style.display = "block";
     document.getElementById("rules").style.display = "block";
+    document.getElementById("rules_btn").style.display = "none";
+});
+
+count.addEventListener("click", () => {
+    let pl = document.getElementById("players").value;
+    document.getElementById("price").value =
+        (pl < 8 || pl > 14) ? "ошибка" : Math.round(3500 / pl);
 });
 
 address.addEventListener("click", () => {
