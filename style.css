@@ -24,7 +24,6 @@ hr {
 	height: 100%;
 	max-width: 390px;
 	margin: 0 auto;
-	border: 1px solid black;
 	color: var(--tg-theme-text-color);
 	background: var(--tg-theme-bg-color);
 	font-size: 18px;
@@ -32,14 +31,14 @@ hr {
 
 #page {
 	min-height: 100%;
-	padding: 20px 20px 60px;
+	padding: 20px 20px 50px;
 	box-sizing: border-box;
 	text-align: left;
 }
 
 #menu {
-	height: 60px;
-	margin-top: -60px;
+	height: 50px;
+	margin-top: -50px;
 	box-sizing: border-box;
 }
 
@@ -59,7 +58,7 @@ hr {
 	display: grid;
 	gap: 10px;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 45px 20px;
+	grid-template-rows: 45px 25px;
 }
 
 #players {
@@ -67,19 +66,13 @@ hr {
 	width: 70%;
 	border-radius: 5px;
 	border: var(--tg-theme-section-bg-color);
-	color: var(--tg-theme-subtitle-text-color);
 	font-size: 17px;
 	font-weight: 700;
-	text-align: center
+	text-align: center;
 }
 
 #price {
 	font-weight: 700;
-	font-size: 18px;
-}
-
-#count {
-	margin-top: 25px;
 	font-size: 18px;
 }
 
@@ -94,6 +87,7 @@ hr {
 	display: none;
 	font-size: 18px;
 }
+
 #rules_btn {
 	display: inline-block;
 	font-size: 18px;
@@ -101,7 +95,7 @@ hr {
 
 .btn {
 	width: 100%;
-	padding: 10px 20px;
+	padding: 10px;
 	border: none;
 	background: var(--tg-theme-button-color);
 	border-radius: 10px;
