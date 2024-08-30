@@ -10,13 +10,13 @@ h1 {
 	font-size: 25px;
 }
 
-p {padding-top: 15px}
+p {margin-top: 20px;}
 
 hr {
 	margin-top: 10px;
-	background-color: var(--tg-theme-section-separator-color);
-	color: var(--tg-theme-section-separator-color);
-	border: var(--tg-theme-section-separator-color);
+	background-color: var(--tg-theme-subtitle-text-color);
+	color: var(--tg-theme-subtitle-text-color);
+	border: var(--tg-theme-subtitle-text-color);
 	height: 2px;
 }
 
@@ -32,14 +32,14 @@ hr {
 
 #page {
 	min-height: 100%;
-	padding: 20px 20px 50px;
+	padding: 20px 20px 60px;
 	box-sizing: border-box;
 	text-align: left;
 }
 
 #menu {
-	height: 50px;
-	margin-top: -50px;
+	height: 60px;
+	margin-top: -60px;
 	box-sizing: border-box;
 }
 
@@ -55,35 +55,49 @@ hr {
 }
 
 .payment {
-	padding-top: 5px;
 	text-align: center;
 	display: grid;
 	gap: 10px;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: min-content min-content;
+	grid-template-rows: 45px 20px;
 }
 
 #players {
 	margin: 0 auto;
 	width: 70%;
+	border-radius: 5px;
 	border: var(--tg-theme-section-bg-color);
 	color: var(--tg-theme-subtitle-text-color);
+	font-size: 17px;
 	font-weight: 700;
+	text-align: center
 }
 
-#price {font-weight: 700}
-#count {padding-top: 20px}
+#price {
+	font-weight: 700;
+	font-size: 18px;
+}
+
+#count {
+	margin-top: 25px;
+	font-size: 18px;
+}
 
 .list {padding: 20px}
-.pl {text-align: center}
 
 .rule {
 	padding: 8px;
 	text-align: left;
 }
 
-#info_btn {display: none}
-#rules_btn {display: inline-block}
+#info_btn {
+	display: none;
+	font-size: 18px;
+}
+#rules_btn {
+	display: inline-block;
+	font-size: 18px;
+}
 
 .btn {
 	width: 100%;
@@ -93,6 +107,7 @@ hr {
 	border-radius: 10px;
 	color: var(--tg-theme-button-text-color);
 	font-weight: 700;
+	font-size: 15px;
 }
 
 .btn:hover {

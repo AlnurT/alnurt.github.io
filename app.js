@@ -31,12 +31,6 @@ address.addEventListener("click", () => {
 });
 
 tel.addEventListener("click", () => {
-    document.execCommand("copy", true, "+79006200637")
-
-    tel.style.background = "var(--tg-theme-secondary-bg-color)";
-    setTimeout(() => {
-        tel.style.background = "var(--tg-theme-button-color)";
-    }, 1000);
-
+    navigator.clipboard.writeText('+79006200637');
+    tg.showAlert("Телефон скопирован");
 });
-
