@@ -4,7 +4,8 @@ let rules = document.getElementById("rules_btn");
 let address = document.getElementById("address");
 let tel_admin = document.getElementById("tel_admin");
 let tel_capt = document.getElementById("tel_capt");
-let players;
+let players = document.getElementById("players");
+let price = document.getElementById("price");
 
 
 info.addEventListener("click", () => {
@@ -37,6 +38,5 @@ tel_capt.addEventListener("click", () => {
 
 players.oninput = function () {
     let pl = players.value
-    let price;
-    price.innerHTML = pl < 8 ? "ошибка" : Math.round(3500 / pl);
+    price.innerHTML = (pl < 8 || pl > 18) ? "ошибка" : Math.round(3500 / pl);
 }
