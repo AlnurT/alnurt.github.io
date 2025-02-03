@@ -38,5 +38,5 @@ tel_capt.addEventListener("click", () => {
 
 players.oninput = function () {
     let pl = players.value
-    price.innerHTML = (pl < 8 || pl > 18) ? "ошибка" : Math.round(3500 / pl);
+    price.innerHTML = (pl < 8 || pl > 18) ? "ошибка" : Math.round(3800 / pl);
 }
